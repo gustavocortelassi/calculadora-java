@@ -15,12 +15,29 @@ public class Calculadora {
             System.out.println("4. Multiplicacao");
             System.out.println("0. Sair");
             op = scanner.nextInt();
+            
+            switch (op) {
+                case 1:
+                    System.out.println("Informe o primeiro numero a ser somado ");
+                    int a = scanner.nextInt();
+
+                    System.out.println("Informe o segundo numero a ser somado ");
+                    int b = scanner.nextInt();
+                    
+                    int resultado = Soma(a, b);
+
+                    System.out.println("O resultado eh: " +resultado);
+                    break;
+            
+                default:
+                    break;
+            }
 
         } while (op != 0);
     }
 
-    public int Soma(int a, int b){
+    public static int Soma(int a, int b){
         int soma = a + b;
         return soma;
-    };
+    }
 }
