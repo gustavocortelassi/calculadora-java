@@ -66,8 +66,9 @@ public class Calculadora {
                     op = 0;
                     break;
             }
-
+            
         } while (op != 0);
+        scanner.close();
     }
 
     public static int Soma(int a, int b){
