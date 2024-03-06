@@ -40,6 +40,17 @@ public class Calculadora {
 
                     System.out.println("O resultado eh: " +resultado);
                     break;
+                case 3:
+                    System.out.println("Informe o numerador ");
+                    a = scanner.nextInt();
+
+                    System.out.println("Informe o denominador ");
+                    b = scanner.nextInt();
+
+                    resultado = Divisao(a, b);
+
+                    System.out.println("O resultado eh: " +resultado);
+                    break;
                 default:
                     break;
             }
