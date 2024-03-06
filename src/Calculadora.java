@@ -51,7 +51,19 @@ public class Calculadora {
 
                     System.out.println("O resultado eh: " +resultado);
                     break;
+                case 4:
+                    System.out.println("Informe o primeiro numero ");
+                    a = scanner.nextInt();
+
+                    System.out.println("Informe o segundo numero ");
+                    b = scanner.nextInt();
+
+                    resultado = Multiplicacao(a, b);
+
+                    System.out.println("O resultado eh: " +resultado);
+                    break;
                 default:
+                    op = 0;
                     break;
             }
 
